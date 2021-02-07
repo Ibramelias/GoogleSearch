@@ -31,8 +31,6 @@ function Results(props){
                                 <p className="lead">
                                 {book.volumeInfo.description}
                                 </p>
-                                
-
                             </Col>
                         </Row>           
                     </Card.Body>

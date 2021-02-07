@@ -2,8 +2,8 @@ import React from 'react'
 import { Container, Card, Button, InputGroup, FormControl } from 'react-bootstrap'
 import { FaSearch } from 'react-icons/fa'
 import Results from "../components/Results/Results"
-import "./Search.css"
 import API from "../utils/API"
+import "../style/search.css"
 
 class Search extends React.Component {
 
@@ -65,7 +65,7 @@ class Search extends React.Component {
                                 <FormControl
                                     value={this.state.search}
                                     onChange={this.handleInputChange}
-                                    placeholder="The Joy Luck Club"
+                                    placeholder="Your Favorite Book "
                                     name="searchTerm"
                                 />
                                 <InputGroup.Append>
@@ -85,7 +85,7 @@ class Search extends React.Component {
                     ) : (
                             <div>
                                 <hr />
-                                <p className="lead font-italic">No results to display</p>
+                                <p className="lead font-italic">No results</p>
                             </div>
                         )}
 

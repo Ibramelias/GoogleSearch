@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Card } from 'react-bootstrap'
-import "./Search.css"
+import "../style/search.css"
 import SavedBooks from "../components/SavedBooks/SavedBooks"
 import API from "../utils/API"
 
