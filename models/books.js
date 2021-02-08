@@ -11,6 +11,6 @@ const bookSchema = new Schema({
     link: { type: String, required: true}
 })
 
-const BooksList = mongoose.model("Book", bookSchema);
+const BooksList = mongoose.model("BookList", bookSchema);
 
 module.exports = BooksList;
