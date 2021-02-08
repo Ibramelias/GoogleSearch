@@ -40,14 +40,14 @@ class Search extends React.Component {
             }).catch(err => console.log(err)); // catch any errors and display to console.
     }
 
-    saveBook = bookData => {
+    saveBook = BooksList => {
         API.saveBook({
-            _id: bookData.id,
-            title: bookData.title,
-            authors: bookData.authors,
-            description: bookData.description,
-            image: bookData.image,
-            link: bookData.link
+            _id: BooksList.id,
+            title: BooksList.title,
+            authors: BooksList.authors,
+            description: BooksList.description,
+            image: BooksList.image,
+            link: BooksList.link
         }).then(console.log("Posted"))
             .catch(err => console.log(err))
     }
